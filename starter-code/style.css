@@ -185,6 +185,19 @@ footer {
   gap: 1.25rem;
 }
 
+.footer__icon {
+  cursor: pointer;
+}
+
+.footer__icon:hover {
+  filter: invert(66%) sepia(82%) saturate(2516%) hue-rotate(322deg)
+    brightness(96%) contrast(105%);
+}
+
+.footer__icon:active {
+  transform: scale(1.1);
+}
+
 @media (min-width: 48rem) {
   body {
     background-image: url("./assets/bg-pattern-1.svg"),
