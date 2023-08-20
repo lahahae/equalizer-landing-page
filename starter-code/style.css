@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+:root {
+  --black: rgb(25, 24, 34);
+  --orange: rgb(255, 185, 100);
+  --cyan: rgb(102, 226, 220);
+  --red: rgb(250, 116, 83);
+  --white: rgb(252, 250, 249);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  background-image: url("./assets/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right -220px top -250px;
+}
+
+header {
+  margin: 2.3125rem 1.5rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  color: var(--black);
+  margin-top: 1.875rem;
+  margin-inline: 1.5rem;
+}
+.intro__title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -0.0284rem;
+}
+
+.intro__description {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.content {
+  background-image: url("./assets/bg-pattern-2.svg");
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 17.5rem;
+  border-radius: 12px;
+  height: 37.5rem;
+  margin-top: 10.375rem;
+  position: relative;
+}
+
+.content__img {
+  display: block;
+  margin-inline: auto;
+  width: 13.0608rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -6.125rem;
+  text-align: center;
+}
+
+.content__detail {
+  padding: 3rem 2.25rem;
+  background-color: var(--red);
+  border-radius: 12px;
+  color: var(--white);
+  position: absolute;
+  max-width: 23.4375rem;
+  margin-inline: auto;
+  top: 23.75rem;
+  left: 0;
+  right: 0;
+}
+
+.detail__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.detail__description {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: 0.75rem;
+}
+
+.detail__pricing {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: -0.0125rem;
+  margin-top: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.detail__pricing > span {
+  font-size: 4.0625rem;
+  vertical-align: middle;
+  font-weight: 700;
+  line-height: 3.25rem;
+}
+
+.content__button {
+  border-style: none;
+  border-radius: 12px;
+  padding-block: 0.9375rem;
+  width: 100%;
+  font-weight: 700;
+  display: block;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.content__button:last-child {
+  margin-top: 1rem;
+}
+
+.content__button > span {
+  vertical-align: middle;
+}
+
+.button__icon {
+  vertical-align: middle;
+  padding-right: 0.3125rem;
+}
+
+.button--black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.button--black:hover {
+  background: var(--cyan);
+}
+
+.button--black:active {
+  background: var(--cyan);
+  transform: scale(1.01);
+}
+
+.button--white {
+  background: var(--white);
+  color: var(--black);
+}
+
+.button--white:hover {
+  background: var(--orange);
+}
+
+.button--white:active {
+  background: var(--orange);
+  transform: scale(1.01);
+}
+
+footer {
+  margin-top: 24.375rem;
+  margin-inline: 1.5rem;
+  display: grid;
+  row-gap: 2rem;
+}
+
+.footer__content {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.footer__content > p:last-child {
+  font-weight: 700;
+}
+
+.footer__social {
+  margin-block: 2rem 5rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+@media (min-width: 48rem) {
+  body {
+    background-image: url("./assets/bg-pattern-1.svg"),
+      url("./assets/bg-main-tablet.png");
+    background-position: top -35px right -40px, left -400px top -250px, top;
+    background-size: 16.625rem 25rem, auto;
+  }
+
+  header {
+    margin: 3.875rem 2.4375rem;
+    margin-bottom: 5.9375rem;
+  }
+
+  .intro {
+    margin-inline: 2.4375rem;
+    gap: 1.75rem;
+  }
+
+  .intro__title {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.0625rem;
+    text-shadow: none;
+    width: 60%;
+  }
+
+  .intro__description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    width: 74%;
+  }
+
+  .content {
+    background-position: top -50px left 57%;
+    margin-inline: 2.4375rem;
+    background-size: 20.125rem;
+    margin-top: 15.5625rem;
+  }
+
+  .content__img {
+    margin-inline: 4rem auto;
+    width: 16.875rem;
+    top: -8.625rem;
+  }
+
+  .content__detail {
+    max-width: 23.4375rem;
+    margin-inline: auto 3.625rem;
+    top: 9.375rem;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 2.4375rem;
+    margin-top: 11.4375rem;
+  }
+
+  .footer__content {
+    grid-row: 2;
+  }
+
+  .footer__content > p:nth-child(2) {
+    display: inline;
+  }
+
+  .footer__content > p:last-child {
+    font-weight: 700;
+    display: inline;
+  }
+
+  .footer__social {
+    grid-row: 2;
+    justify-content: end;
+  }
+}
+
+@media (min-width: 90rem) {
+  body {
+    background-image: url("./assets/bg-pattern-1.svg"),
+      url("./assets/bg-main-desktop.png");
+    background-position: top -45px right, left -300px top -250px, top;
+    background-size: 19.5rem 29.25rem, auto;
+  }
+
+  header {
+    margin: 3.875rem 10.3125rem;
+    margin-bottom: 5.9375rem;
+  }
+
+  .intro {
+    margin-inline: 10.3125rem;
+    gap: 2.5rem;
+  }
+
+  .intro__title {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.0625rem;
+    text-shadow: none;
+    width: 80%;
+  }
+
+  .intro__description {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    width: 75%;
+  }
+
+  .content {
+    background-position: top -50px left 44%;
+    margin-inline: 10.3125rem;
+    background-size: 20.125rem;
+    margin-top: 20.0625rem;
+  }
+
+  .content__img {
+    margin-inline: 7.375rem auto;
+    width: 19.5rem;
+    top: -12.125rem;
+  }
+
+  .content__detail {
+    max-width: 27.875rem;
+    padding: 3.625rem 3.6875rem 3rem 3.375rem;
+    margin-inline: auto 5.9375rem;
+    top: 5.625rem;
+  }
+
+  .detail__title {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+
+  .detail__description {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    margin-top: 1.375rem;
+  }
+
+  .detail__pricing {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: -0.0125rem;
+    margin-top: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    grid-auto-columns: 1fr 1fr 1fr;
+    margin-inline: 10.3125rem;
+    margin-top: 12.625rem;
+  }
+
+  .footer__image {
+    grid-row: 1;
+  }
+
+  .footer__content {
+    grid-row: 1;
+  }
+
+  .footer__content > p:nth-child(2) {
+    display: inline;
+  }
+
+  .footer__content > p:last-child {
+    font-weight: 700;
+    display: inline;
+  }
+
+  .footer__social {
+    grid-row: 1;
+    justify-content: end;
+  }
+}
